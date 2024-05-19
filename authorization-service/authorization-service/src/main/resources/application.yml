@@ -1,0 +1,23 @@
+jwt:
+  secret: security
+  validity: 1800
+
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: authorization-Service
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/authorization
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+properties:
+  hibernate:
+    dialect: org.hibernate.dialect.MySQL8Dialect
